@@ -1,0 +1,14 @@
+# network
+ping 8.8.8.8
+ping 1.1.1.1
+ping 123.123.123.123
+ping 9.9.9.9
+ping 127.0.0.1
+
+# perf
+ls
+cat /etc/os-release
+/tmp/evil_script
+/tmp/my_program
+/bin/echo hello
+/tmp/test.sh
