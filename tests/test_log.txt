@@ -1,0 +1,21 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/caukimam/project_Ebpf_lsm/tests
+collecting ... collected 13 items
+
+test_network.py::test_ping_behavior[8.8.8.8-False] PASSED                [  7%]
+test_network.py::test_ping_behavior[1.1.1.1-True] PASSED                 [ 15%]
+test_network.py::test_ping_behavior[123.123.123.123-False] PASSED        [ 23%]
+test_network.py::test_ping_behavior[9.9.9.9-False] PASSED                [ 30%]
+test_network.py::test_ping_behavior[127.0.0.1-False] PASSED              [ 38%]
+test_exec.py::test_perf_exec_blocking[ls] PASSED                         [ 46%]
+test_exec.py::test_perf_exec_blocking[cat /etc/os-release] PASSED        [ 53%]
+test_exec.py::test_perf_exec_blocking[/tmp/evil_script] PASSED           [ 61%]
+test_exec.py::test_perf_exec_blocking[/tmp/my_program] PASSED            [ 69%]
+test_exec.py::test_perf_exec_blocking[/bin/echo hello] PASSED            [ 76%]
+test_exec.py::test_perf_exec_blocking[/tmp/test.sh] PASSED               [ 84%]
+test_bpf.py::test_bpf_cases[0-test_case/test_prog_load_block.c] PASSED   [ 92%]
+test_bpf.py::test_bpf_cases[1-test_case/test_bpf_block.c] PASSED         [100%]
+
+============================== 13 passed in 3.24s ==============================
