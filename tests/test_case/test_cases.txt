@@ -1,0 +1,24 @@
+# network
+ping 8.8.8.8
+ping 1.1.1.1
+ping 9.9.9.9 443
+curl http://1.1.1.1
+curl http://8.8.8.8
+wget http://1.1.1.1
+telnet 8.8.4.4
+nc 1.1.1.1 80
+
+# exec
+ls
+cat /etc/os-release
+/bin/ls
+/tmp/shell
+/tmp/my_script.sh
+/tmp/a.sh
+cat /tmp/a.sh
+cat /tmp/b.sh
+/tmp/b.sh
+
+# perf
+perf stat -p $(cat tmp_pid/pid_small.txt) sleep 1
+perf stat -p $(cat tmp_pid/pid_large.txt) sleep 1
